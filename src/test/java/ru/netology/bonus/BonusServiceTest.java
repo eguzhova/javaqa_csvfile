@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BonusServiceTest {
-    @ParameterizedTest (name = "{index} " + " {0}")
+    @ParameterizedTest (name = "{index}. " + " {0}")
     // готовим тестовые данные
     @CsvFileSource(resources = "/data.csv")
     void shouldCalculate(String test,
